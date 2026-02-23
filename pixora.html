@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pixora</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Libertinus+Serif+Display&family=Press+Start+2P&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: rgb(232, 188, 140);
+      color: rgb(0, 0, 0);
+      font-family: "Libertinus Serif Display", sans-serif;
+    }
+
+    .searchprofile {
+      display: flex;
+      align-items: center;
+      border: 2px solid #070404;
+      border-radius: 20px;
+      padding: 4px 10px;
+      background: #FAF3E0;
+      margin-bottom: 20px;
+    }
+
+    .searchprofile input {
+      border: none;
+      outline: none;
+      padding: 5px;
+      background: #FAF3E0;
+      color: #160606;
+      flex: 1;
+    }
+
+    button {
+      border: none;
+      outline: none;
+      background: #FAF3E0;
+      color: #160606;
+      cursor: pointer;
+      margin-left: 5px;
+      font-size: 18px;
+    }
+
+    .logo {
+      margin: 0;
+      font-size: 35px;
+      text-shadow: 4px 4px 4px rgb(93, 33, 33);
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+    }
+
+    .container {
+      display: flex;
+      height: 100vh;
+    }
+
+    .sidebar {
+      background: black;
+      color: white;
+      font-family: "Lora", sans-serif;
+      width: 200px;
+      height: 100vh;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .sidebar a{
+      color: white;
+      text-decoration: none;
+      margin: 10px 0;
+      transition: 0.2s;
+    }
+    .sidebar a:visited{
+        color:#f9f9f9;
+
+    }
+
+    .sidebar a:hover {
+      color: hotpink;
+    }
+
+    /* Main content */
+    .content {
+      flex: 1;
+      padding: 20px;
+      background: #f9f9f9;
+      overflow-y: auto;
+    }
+
+    /* Masonry grid */
+    .grid {
+      column-count: 3;
+      column-gap: 15px;
+    }
+
+    .grid figure {
+      background: #fff;
+      margin: 0 0 15px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+      overflow: hidden;
+      break-inside: avoid;
+      transition: transform 0.2s;
+    }
+
+    .grid figure:hover {
+      transform: translateY(-5px);
+    }
+
+    .grid img {
+      width: 100%;
+      max-height: 250px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .grid figcaption {
+      padding: 10px;
+      font-size: 14px;
+      background: #FAF3E0;
+    }
+
+    .grid small {
+      color: gray;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <h1 class="logo">Pixora</h1>
+      <br>
+      <nav>
+        <ul>
+          <li><a href="#myprofile">My Profile</a></li>
+          <br>
+          <li><a href="#feed">Feed</a></li>
+          <br>
+          <li><a href="#explore">Explore</a></li>
+          <br>
+          <li><a href="#inbox">Inbox</a></li>
+          <br>
+          <li><a href="#friends">Friends</a></li>
+          <br>
+          <li><a href="#signup">Sign Up</a></li>
+          <br>
+          <li><a href="#login">Log In </a></li>
+          <br>
+          <li><a href="#settings">Settings</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="content">
+      <div class="searchprofile">
+        <input type="text" placeholder="search">
+        <button>🔍︎</button>
+      </div>
+
+      <h2>Feed</h2>
+      <br>
+      <div class="grid">
+        <figure>
+          <img src="image1.jpg" alt="image1">
+          <figcaption>
+            Spring💐 <br>
+            <small>August 1<sup>st</sup></small>
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="image2.jpg" alt="image2">
+          <figcaption>
+            Cafe ☕ <br>
+            <small>August 2<sup>nd</sup></small>
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="image3.jpg" alt="image3">
+          <figcaption>
+            Lake 🌊 <br>
+            <small>August 3<sup>rd</sup></small>
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="image4.jpg" alt="image4">
+          <figcaption>
+            European summer vibes 🇪🇺 <br>
+            <small>August 4<sup>th</sup></small>
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="image5.jpg" alt="image5">
+          <figcaption>
+            Sunset 🌇 <br>
+            <small>August 5<sup>th</sup></small>
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="image6.jpg" alt="image6">
+          <figcaption>
+            Rainy auto ride 🚖 <br>
+            <small>August 6<sup>th</sup></small>
+          </figcaption>
+        </figure>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

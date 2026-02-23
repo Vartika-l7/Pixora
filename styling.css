@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+    background-color:rgb(232, 188, 140);
+    color:rgb(0, 0, 0);
+    font-family: "Libertinus Serif Display", sans-serif;
+}
+.searchprofile{
+    display: flex;
+    align-items:center;
+    border: 2px solid #070404;
+    border-radius:20px;
+    padding: 4px 10px;
+    background: #FAF3E0;
+}
+.searchprofile input{
+    border:none;
+    outline: none;
+    padding: 5px;
+    background: #FAF3E0;
+    color: #160606;
+}
+button{
+    border: none;
+    outline: none;
+    background: #FAF3E0;
+    color:#160606;
+    cursor: pointer;
+    margin-left: 5px;
+}
+.logo{
+    margin:0;
+    font-size: 35px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+.container{
+    display: flex;
+    height: 100vh;
+}
+.sidebar{
+    background: black;
+    color:white;
+    font-family:"lora",sans-serif;
+    width:200px;
+    height:100vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.sidebar a {
+  color: white;
+  text-decoration: none;
+  margin: 10px 0;
+  transition: 0.2s;
+}
+
+.sidebar a:hover {
+  color: hotpink;
+}
+
+/* Main content */
+.content {
+  flex: 1;               /* take remaining space */
+  padding: 20px;
+  background: #f9f9f9;
+  overflow-y: auto;
+}
+
+/* Masonry-style grid (like VSCO/Pinterest) */
+.grid {
+  column-count: 3;   /* number of columns */
+  column-gap: 15px;
+}
+
+.grid img {
+  width: 100%;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  display: block;
+}
